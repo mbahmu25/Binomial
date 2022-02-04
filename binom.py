@@ -48,8 +48,8 @@ if pilihan == 1:
             break
 elif pilihan == 2:
     x = int(input("x = "))
-    result = round(result,4)
     result = (math.comb(strt,x)*(c**x)*((1-c)**(strt-x)))
+    result = round(result,4)
     print("f(",x,") = ", result)
 
 elif pilihan == 3:
@@ -72,7 +72,7 @@ elif pilihan == 3:
             result = (math.comb(strt,p)*(c**p)*((1-c)**(strt-p)))
             temp = temp + result
             p += 1
-            if p==xt :
+            if p==x :
                 temp = 1 - temp
                 temp = round(temp,4)
                 print("P(X >",x,") = ", temp)
