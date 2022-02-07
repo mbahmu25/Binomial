@@ -3,36 +3,7 @@ strt = int(input("Jumlah Sampel / X = "))
 c = input("Peluang benar = ")
 a = strt + 1
 
-for i in c:
-
-    if i == '/':
-        g = 0
-        c1 = 0
-        c2 = 0
-        c = str(c)
-        for i in c:
-            g +=1
-            if i =='/':
-                g -= 1
-                c1  =  c[:g]
-                g = 0 
-                c1 = int(c1)
-                break
-        pass
-        c = c[::-1]
-        for i in c:
-            g +=1
-            if i =='/':
-                g -= 1
-                c2  =  c[:g]
-                c2 = int(c2[::-1])
-                break
-        c = round(float(c1/c2),4)
-        break
-
-    elif i == '.' :
-        c = float(c)
-        pass
+c = eval(c)
 
 print("----------------------------------------")
 pilihan = int(input("1. Sebaran Distribusi Binomial \n2. Distribusi Binomial \n3. Distribusi Binomial Kumulatif\nPilihan = "))
